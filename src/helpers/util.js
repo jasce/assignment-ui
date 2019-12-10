@@ -1,6 +1,13 @@
 import {CAMPAIGNS} from './constants'
 import dayjs from 'dayjs'
 
+/**
+   * Handlers for checking the date for each type of Campaign
+   * @param {DateObject} input for every campaign method- date object to check
+   * 
+   * @returns {Boolean} if date lies in the range
+*/
+
 const campaignHandlers = {
   [CAMPAIGNS.UPCOMING]: (date) => dayjs().isBefore(dayjs(date), 'day'),
   [CAMPAIGNS.LIVE]: (date) => dayjs().isSame(dayjs(date), 'day'),
@@ -13,6 +20,12 @@ export const getActiveCampaignData = (data=[], selectedCampaign) => {
   })
 }
 
+/**
+   * Function for outputting the date in text format
+   * @param {DateObject} input for every campaign method- date object to check
+   * 
+   * @returns {String} eg: 3 days ago
+*/
 export const getFormattedDateText = (date) => {
   const dateToCheck = dayjs(date);
   const currentDate = dayjs();

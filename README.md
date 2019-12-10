@@ -18,7 +18,8 @@
 |Campaign Date change | Select today's date in Past Campaign tab for any campaign | The campaign should be removed from Past campaign tab and appear in Live Campaign tab|
 |Pricing Modal | Select Pricing Option from any Campaign | The pricing modal must be visible with the campaign data|
 |No Campaign Data | Remove all campaigns from either of the tab using schedule functionality | No Campaign!! text must be shown |
-|Right Tab must be selected | Select any tabs from tab menu | Selected tab must get highlighted|
+|Selected Tab must be highlighted | Select any tabs from tab menu | Selected tab must get highlighted|
+|Correct Data must be shown corresponding to each tab | Select any tabs from tab menu | Campaign Data must correspond to the tab selected|
 
 ##### Note: LocalStorage has been used to store the Campaign Data.
 
